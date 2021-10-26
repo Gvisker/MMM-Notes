@@ -14,7 +14,7 @@ Module.register("Notes", {
 
 	requiresVersion: "2.1.0", // Required version of MagicMirror
 
-	start: function() {
+	start: function () {
 		var self = this;
 		var dataRequest = null;
 		var dataNotification = null;
@@ -24,8 +24,17 @@ Module.register("Notes", {
 
 		// Schedule update timer.
 		this.getData();
-		setInterval(function() {
+		setInterval(function () {
 			self.updateDom();
 		}, this.config.updateInterval);
 	},
+
+	//display header
+
+	//get text from web server
+
+	//check for updates every x time
+
+	//display text in bullet list
+}
 
