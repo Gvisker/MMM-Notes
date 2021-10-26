@@ -1,13 +1,12 @@
 /* global Module */
 
 /* Magic Mirror
- * Module: {{MODULE_NAME}}
+ * Module: Notes
  *
- * By {{AUTHOR_NAME}}
- * {{LICENSE}} Licensed.
+ * By Grant Visker
  */
 
-Module.register("{{MODULE_NAME}}", {
+Module.register("Notes", {
 	defaults: {
 		updateInterval: 60000,
 		retryDelay: 5000
