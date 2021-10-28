@@ -7,27 +7,22 @@
  */
 
 Module.register("Notes", {
-	defaults: {
-		updateInterval: 60000,
-		retryDelay: 5000
-	},
+        // Default module config.
+        defaults: {
+            text: "Hello World!"
+        },
 
-	requiresVersion: "2.1.0", // Required version of MagicMirror
+        getTemplate: function () {
+            return "Hello Notes App!";
+        },
 
-	start: function () {
-		var self = this;
-		var dataRequest = null;
-		var dataNotification = null;
+        getTemplateData: function () {
+            return this.config;
+        }
+    });
 
-		//Flag for check if module is loaded
-		this.loaded = false;
 
-		// Schedule update timer.
-		this.getData();
-		setInterval(function () {
-			self.updateDom();
-		}, this.config.updateInterval);
-	},
+
 
 	//display header
 
