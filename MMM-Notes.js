@@ -9,7 +9,7 @@
 Module.register("Notes", {
         // Default module config.
         defaults: {
-            text: "Hello World!"
+            text: "Hello Notes App!"
         },
 
         getTemplate: function () {
@@ -18,7 +18,10 @@ Module.register("Notes", {
 
         getTemplateData: function () {
             return this.config;
-        }
+        },
+	start: dunction () {
+	    return "Hello Notes App!";
+	}
     });
 
 
