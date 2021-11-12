@@ -10,8 +10,12 @@ Module.register("Notes", {
         // Default module config.
         defaults: {
             text: "Hello Notes App!"
-        },
-
+        },	
+	getDom: function() {
+		var wrapper = document.createElement("div");
+		wrapper.innerHTML = this.config.text;
+		return wrapper;
+	},
         getTemplate: function () {
             return "Hello Notes App!";
         },
@@ -19,7 +23,7 @@ Module.register("Notes", {
         getTemplateData: function () {
             return this.config;
         },
-	start: dunction () {
+	start: function () {
 	    return "Hello Notes App!";
 	}
     });
@@ -36,3 +40,4 @@ Module.register("Notes", {
 	//display text in bullet list
 }
 
+ 
