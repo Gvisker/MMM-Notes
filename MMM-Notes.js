@@ -8,25 +8,17 @@
 
 Module.register("Notes", {
         // Default module config.
-        defaults: {
-            text: "Hello Notes App!"
-        },	
-	getDom: function() {
-		var wrapper = document.createElement("div");
-		wrapper.innerHTML = this.config.text;
-		return wrapper;
+        defaults: {},
+  	start: function () {},
+  	getDom: function()
+	{ 
+	 	var element = document.createElement("div")
+  		element.className = "myContent"
+	 	element.innerHTML = "Hello, World!"
+  		return element
 	},
-        getTemplate: function () {
-            return "Hello Notes App!";
-        },
-
-        getTemplateData: function () {
-            return this.config;
-        },
-	start: function () {
-	    return "Hello Notes App!";
-	}
-    });
+  	notificationReceived: function() {},
+  	socketNotificationReceived: function() {}
 
 
 
