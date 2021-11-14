@@ -6,12 +6,12 @@
  * By Grant Visker
  */
 
-Module.register("Notes", {
+Module.register("MMM-Notes", {
         // Default module config.
         defaults: {},
   	start: function () {},
   	getDom: function()
-	{ 
+	{
 	 	var element = document.createElement("div")
   		element.className = "myContent"
 	 	element.innerHTML = "Hello, World!"
@@ -30,6 +30,4 @@ Module.register("Notes", {
 	//check for updates every x time
 
 	//display text in bullet list
-}
-
- 
+})
